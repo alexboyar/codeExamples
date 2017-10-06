@@ -8,5 +8,5 @@
 // разметка колонок
 [{"header": "Название","dataIndex": "title","width":"300"},
   {"header": "Идентификатор","dataIndex": "id","width":"100"},
-  {"header": "Id родителя","dataIndex": "catalog","width":"100","test":"100"}]
+  {"header": "Id родителя","dataIndex": "catalog","width":"100"}]
 ]
