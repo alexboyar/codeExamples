@@ -1,0 +1,12 @@
+[
+// вкладки формы
+[{"caption":"Rassylki","fields": [
+  {"field":"title","caption":"Название"},
+  {"field":"id","caption":"Идентификатор"},
+  {"field":"catalog","caption":"Id родителя","description":"Идентификатор родителя ресурсов для рассылки"}]}]
+,
+// разметка колонок
+[{"header": "Название","dataIndex": "title","width":"300"},
+  {"header": "Идентификатор","dataIndex": "id","width":"100"},
+  {"header": "Id родителя","dataIndex": "catalog","width":"100","test":"100"}]
+]
