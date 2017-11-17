@@ -1,0 +1,16 @@
+<button type="submit" name="_sendForm" value="1">Отправить</button>
+
+{'!AjaxForm' | snippet : [
+	'snippet'=>'FormIt',
+	'frontend_css' =>'',
+	'form'=>'callform_tpl',
+	'hooks'=>'email',
+	'emailSubject'=>'Новая заявка на обратный звонок',
+	'emailTpl'=>'callform_email',
+	'emailTo'=>$_modx->config.formit_email_to,
+	'emailFrom'=>$_modx->config.formit_email_from,
+	'submitVar'=>'sendForm',
+	'validate'=>'fullname:required,phone:required',
+	'validationErrorMessage'=>'В форме содержатся ошибки!',
+	'successMessage'=>'Ваш запрос отправлен<br />мы с радостью свяжемся с Вами',
+]}
