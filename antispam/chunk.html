@@ -14,3 +14,26 @@
 	'validationErrorMessage'=>'В форме содержатся ошибки!',
 	'successMessage'=>'Ваш запрос отправлен<br />мы с радостью свяжемся с Вами',
 ]}
+
+<script>
+	$(document).on('af_complete', function(event, response) {
+		console.log('форма отправлена');
+		var inst = $.remodal.lookup[$('[data-remodal-id=modal]').data('remodal')];
+		// закрыть модальное окно
+		inst.close();
+		var inst2 = $.remodal.lookup[$('[data-remodal-id=success]').data('remodal')];
+		// открыть модальное окно
+		inst2.open();
+
+		/* var form = response.form;
+		 if (form.attr('id') == 'my_form_3') {
+		 // Скрываем её!
+		 form.hide();
+		 }
+		 // Иначе печатаем в консоль весь ответ
+		 else {
+		 console.log(response)
+		 }
+		 */
+	});
+</script>
